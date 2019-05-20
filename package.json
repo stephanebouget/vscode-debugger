@@ -1,7 +1,7 @@
 {
 	"name": "vscode-debugger",
 	"displayName": "vscode-debugger",
-	"description": "vscode-debugger",
+	"description": "Add debugger keyword into js file with one command !",
 	"version": "0.0.1",
 	"engines": {
 		"vscode": "^1.34.0"
@@ -10,16 +10,19 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:extension.helloWorld"
+		"onCommand:vscodedebugger.debugger"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
-		"commands": [
-			{
-				"command": "extension.helloWorld",
-				"title": "Hello World"
-			}
-		]
+		"commands": [{
+			"command": "vscodedebugger.debugger",
+			"title": "debugger"
+		}],
+		"keybindings": [{
+			"command": "vscodedebugger.debugger",
+			"key": "ctrl+alt+d",
+			"mac": "ctrl+alt+d"
+		}]
 	},
 	"scripts": {
 		"vscode:prepublish": "npm run compile",
