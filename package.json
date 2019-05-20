@@ -2,7 +2,7 @@
 	"name": "vscode-debugger",
 	"displayName": "vscode-debugger",
 	"description": "Add debugger keyword into js file with one command !",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"publisher": "stephanebouget",
 	"repository": "https://github.com/stephanebouget/vscode-debugger.git",
 	"engines": {
